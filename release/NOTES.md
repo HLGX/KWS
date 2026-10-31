@@ -1,3 +1,3 @@
-- Removed the one-click **Update now** feature from 1.2.5.54–1.2.5.56: Windows Defender flagged its updater file as a trojan (a false positive — it only downloaded this release's KWS.zip and copied it into the KWS folder, but that pattern looks like malware to antivirus heuristics).
-- The update banner and Settings now show a download link again. To update: download `KWS.zip`, unzip it over your KWS folder, then press ↻ on KWS in `chrome://extensions`.
-- If Defender removed `sidepanel/updater.js` from your KWS folder, nothing else is affected — just install this version over it.
+- New themes: **Paper** (warm cream, brown ink) and **Midnight** (deep navy, pastel accents).
+- The theme picker in Settings is now a grid of preview cards.
+- Removed the "Classic" theme (it looked almost the same as Dark) — if you used it, you're switched to Dark.
