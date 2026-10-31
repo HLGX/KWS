@@ -14,4 +14,13 @@ Older versions and change notes: [Releases](https://github.com/HLGX/KWS/releases
 4. Click **Load unpacked** and pick the unzipped folder.
 
 ## Update
-Download the new `KWS.zip`, unzip it **over the same folder** (replace files), then press the ↻ reload button on KWS in `chrome://extensions`. Your history and settings are kept.
+
+**From 1.2.5.54 on — one click:** when a new version is out, KWS shows a banner in the side panel. Press **Update now** and KWS downloads it, writes it into its folder and restarts by itself. Your history and settings are kept.
+
+The first time only, Chrome asks you to:
+1. Allow KWS to access GitHub.
+2. Pick the folder KWS is loaded from — it's shown on the KWS card in `chrome://extensions`.
+
+You can also check by hand: KWS Settings → **Check for updates**.
+
+**Manual update (or coming from 1.2.5.53 and older):** download the new `KWS.zip`, unzip it **over the same folder** (replace files), then press the ↻ reload button on KWS in `chrome://extensions`.
