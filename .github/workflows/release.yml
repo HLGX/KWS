@@ -1,0 +1,35 @@
+# Publishes a GitHub release whenever release/KWS.zip changes on main.
+# The version comes from manifest.json inside the zip → tag v<version>, asset KWS.zip
+# (the extension's one-click updater downloads releases/latest/download/KWS.zip).
+# Release notes: release/NOTES.md (optional).
+name: Release KWS
+on:
+  push:
+    branches: [main]
+    paths: ['release/KWS.zip']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read version
+        id: v
+        run: |
+          VER=$(unzip -p release/KWS.zip manifest.json | jq -r .version)
+          [ -n "$VER" ] && [ "$VER" != null ] || { echo "no version in KWS.zip"; exit 1; }
+          echo "ver=$VER" >> "$GITHUB_OUTPUT"
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VER: ${{ steps.v.outputs.ver }}
+        run: |
+          if gh release view "v$VER" >/dev/null 2>&1; then
+            echo "v$VER exists — replacing its KWS.zip"
+            gh release upload "v$VER" release/KWS.zip --clobber
+          else
+            NOTES=release/NOTES.md; [ -f "$NOTES" ] || { echo "KWS $VER" > /tmp/n.md; NOTES=/tmp/n.md; }
+            gh release create "v$VER" release/KWS.zip --title "KWS $VER" --notes-file "$NOTES" --latest
+          fi

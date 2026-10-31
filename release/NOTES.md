@@ -1,0 +1,3 @@
+- SOOP inline player: video decoding now runs off the page thread, so a busy SOOP tab (scans, badges) no longer makes playback stutter or drop audio.
+- Hold-for-4x speed can no longer get stuck: pausing or switching tabs always returns to the normal speed.
+- First release that 1.2.5.54 can install with the **Update now** button.
