@@ -1,2 +1,1 @@
-- StreamRecorder clip download now asks where to save (like the other KWS downloaders) and uses the same file name style: `<streamer> <d Mon yyyy>.mp4`.
-- Includes 1.2.6.3: the same "Clip Downloader" popup as the Twitch / Kick / SOOP players.
+- Right-click a hit's time to choose how to open it: **KWS inline player** or **StreamRecorder recording** (works for Twitch, Kick, SOOP and CHZZK hits).
