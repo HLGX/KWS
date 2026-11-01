@@ -1,3 +1,2 @@
-- StreamRecorder player window now looks exactly like the KWS inline players (same glass bar, icons, speed and volume controls) — the site's own styles no longer break the layout.
-- While it finds the recording, the window shows a KWS loading screen instead of the StreamRecorder website; errors appear there too, with a close button.
-- Includes 1.2.6.1: faster window, no leftover FAQ tabs from the status check, no list slot spent on streamers without recordings, "StreamRecorder" in the activity bar.
+- StreamRecorder player: the ⬇ clip downloader is now the same "Clip Downloader" popup as the Twitch / Kick / SOOP players (Start / End cards, Set to Current, duration, quality, draggable).
+- Includes 1.2.6.2: the player window looks like the KWS inline players and shows a KWS loading screen instead of the StreamRecorder site.
