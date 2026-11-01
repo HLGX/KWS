@@ -1,4 +1,3 @@
-- StreamRecorder status check no longer opens (and leaves behind) hidden FAQ tabs and no longer times out — it asks StreamRecorder's small account endpoint instead of loading a big page.
-- The StreamRecorder player window opens much faster (it no longer loads your whole recordings list first).
-- KWS no longer adds a streamer to your StreamRecorder list when StreamRecorder has no recordings of them — it just says so.
-- "StreamRecorder" now shows in the activity bar while Twitch scans read its chat.
+- StreamRecorder player window now looks exactly like the KWS inline players (same glass bar, icons, speed and volume controls) — the site's own styles no longer break the layout.
+- While it finds the recording, the window shows a KWS loading screen instead of the StreamRecorder website; errors appear there too, with a close button.
+- Includes 1.2.6.1: faster window, no leftover FAQ tabs from the status check, no list slot spent on streamers without recordings, "StreamRecorder" in the activity bar.
