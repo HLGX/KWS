@@ -1,3 +1,4 @@
-- New themes: **Paper** (warm cream, brown ink) and **Midnight** (deep navy, pastel accents).
-- The theme picker in Settings is now a grid of preview cards.
-- Removed the "Classic" theme (it looked almost the same as Dark) — if you used it, you're switched to Dark.
+- **Find new streamers** is easier to spot:
+  - a card on the home screen, with the platform's own way to find streamers (Kick: by keyword via KickLogz Pro · SOOP: from the ranking · others: StreamRecorder's latest list)
+  - a "Not in your history?" line at the bottom of the history list
+  - the find button now says what it does on each platform ("Find streamers by keyword" on Kick, "…from the ranking" on SOOP)
