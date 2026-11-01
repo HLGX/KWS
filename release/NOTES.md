@@ -1,2 +1,2 @@
-- StreamRecorder player: the ⬇ clip downloader is now the same "Clip Downloader" popup as the Twitch / Kick / SOOP players (Start / End cards, Set to Current, duration, quality, draggable).
-- Includes 1.2.6.2: the player window looks like the KWS inline players and shows a KWS loading screen instead of the StreamRecorder site.
+- StreamRecorder clip download now asks where to save (like the other KWS downloaders) and uses the same file name style: `<streamer> <d Mon yyyy>.mp4`.
+- Includes 1.2.6.3: the same "Clip Downloader" popup as the Twitch / Kick / SOOP players.
