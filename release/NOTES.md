@@ -1,4 +1,3 @@
-- **Find new streamers** is easier to spot:
-  - a card on the home screen, with the platform's own way to find streamers (Kick: by keyword via KickLogz Pro · SOOP: from the ranking · others: StreamRecorder's latest list)
-  - a "Not in your history?" line at the bottom of the history list
-  - the find button now says what it does on each platform ("Find streamers by keyword" on Kick, "…from the ranking" on SOOP)
+- **Watch Twitch hits on StreamRecorder** (Settings → Twitch, off by default): an **SR** button under each Twitch hit opens that exact moment in a StreamRecorder recording — useful where Twitch VODs are blocked (e.g. Korea) or the VOD was deleted.
+  - Needs you to be logged in to StreamRecorder (Premium: recordings made before you added a streamer are visible right away).
+  - KWS manages your StreamRecorder targets: if the streamer isn't on your list it's added; when the list is full, **KWS removes the streamer you searched least recently** (never one whose recordings would be deleted for good).
