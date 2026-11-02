@@ -1,4 +1,24 @@
-## KWS 1.2.6.7 — StreamRecorder joins KWS
+## KWS 1.2.6.8 — friendlier for everyone
+
+### New in 1.2.6.8
+- **Settings: basic / advanced.** Keywords, theme, quality and Connected services up front; badges, SOOP mode, results, overnight mode and data backup fold under **Advanced settings**.
+- **Zonian status light** in Connected services (🟢 working · 🟡 resting after too many requests, with a countdown · 🔴 not answering). During a Twitch scan the progress line says in plain words when Zonian is resting and when it continues.
+- **Site badges as cards:** switches for the KWS badges on streamrecorder.io lists and on twitchtracker.com.
+- **Plain-words errors** (busy server, connection, timeout, login) instead of raw codes — the technical text stays in brackets.
+- **Time left** on running scans ("about 3 min left").
+- **Export results** from the tab menu: copy as text (time · name · chat · link) or save as CSV for Excel / Google Sheets.
+- **Hits whose VOD is gone keep their time** (⚠ 01:23:45 in the error colour); the reason is in the tooltip.
+- **Clip downloads always start on the best quality** (Source / original), not whatever is playing — SOOP, Twitch, Kick, StreamRecorder.
+- **StreamRecorder player:** a small "HLGX · Keyword Searcher" loading screen with a live terminal-style log of each step; an already-open player window now comes to the front (or flashes in the taskbar).
+- **Kick:** "Checking your KickLogz login…" while a search waits on it; "Find streamers by keyword" locks its button and shows each stage (login check → preparing → searching N/M).
+- KWS explains why before Chrome asks for the kicklogz.com / CHZZK permission.
+- Update notice shows the 3 install steps when you download.
+- Activity bar: "StreamRecorder" → "SR API".
+- Cleanup: removed leftover DeepL / OpenAI permissions (translation is Google only) and dead settings code.
+
+---
+
+## Since 1.2.6.0
 
 ### Connected services
 Settings now has **Connected services** instead of log-source options. Connect an account and KWS uses it by itself — each with a status light (🟢 Pro / Premium · 🟡 free · 🔴 logged out), a ↻ check and an on/off switch:
